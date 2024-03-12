@@ -5,14 +5,13 @@ const router = express.Router()
 
 router.post('/contato', (req, res)=>{
     let transport = nodemailer.createTransport({
-      host: "smtp.hostinger.com", // Substitua "yourdomain.com" pelo seu domínio na Hostinger
+      host: "smtp.gmail.com'", // Substitua "yourdomain.com" pelo seu domínio na Hostinger
       port: 465, // A porta pode ser 587 ou 465, dependendo das configurações do seu provedor
       secure: true, // Use true para a porta 465, false para a porta 587
       auth: {
-        user: "contato@rhuna.tech", // Substitua pelo seu endereço de e-mail
-        pass: "Rhunatech2023#", // Substitua pela sua senha
+        user: "benolopesdias@gmail.com", // Substitua pelo seu endereço de e-mail
+        pass: "abkdzzztgadalkhz", // Substitua pela sua senha
       },
-      tls:{rejectUnauthorized: false,},
     });
     
 
